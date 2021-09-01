@@ -56,10 +56,15 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerInventory.cs" />
-    <Compile Include="Assets\Scripts\Player Scripts\PlayerPlanting.cs" />
     <Compile Include="Assets\Scripts\PlantingZone.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\PlayerPlanting.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Game Management\SaveSystem.cs" />
+    <Compile Include="Assets\Scripts\Game Management\SaveManagerSpawner.cs" />
+    <Compile Include="Assets\Scripts\Game Management\Saver.cs" />
+    <Compile Include="Assets\Scripts\Game Management\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Cactus.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

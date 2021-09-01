@@ -8,9 +8,10 @@ public class PlayerPlanting : MonoBehaviour
 
     public PlantingZone plantingZone;
     public PlayerInventory playerInventory;
+    GameManager GM;
     void Start()
     {
-        
+        GM = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -19,6 +20,9 @@ public class PlayerPlanting : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && canPlant)
         {
             Instantiate(playerInventory.inventory[0], plantingZone.plantSpawn);
+            plantingZone.plantType = plantingZone.GetComponentInChildren<Cactus>().plantType;
+            GM.plantingZones[plantingZone.plantZoneNum] = plantingZone.plantType;
+
             canPlant = false;
         }
     }

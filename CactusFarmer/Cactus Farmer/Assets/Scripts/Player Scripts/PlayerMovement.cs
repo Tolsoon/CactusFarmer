@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public Saver save;
+
     [SerializeField] public float speed;
     public CharacterController controller;
 
@@ -46,7 +48,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        //saving
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            save.Save();
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            save.LoadSave();
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            save.DeleteSaves();
+        }
+
         UpdateMouseLook();
         UpdateMovement();
 

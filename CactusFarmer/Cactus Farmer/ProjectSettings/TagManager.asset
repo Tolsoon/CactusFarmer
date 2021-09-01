@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - plantZone
+  - saveButton
+  - loadButton
+  - deleteButton
   layers:
   - Default
   - TransparentFX
