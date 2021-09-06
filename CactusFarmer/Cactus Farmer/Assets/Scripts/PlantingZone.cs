@@ -11,15 +11,17 @@ public class PlantingZone : MonoBehaviour
     //number indicates which plant is here
     public int plantType;
 
-    GameManager GM;
+    public GameManager GM;
     private void Awake()
     {
         GM = FindObjectOfType<GameManager>();
-        plantType = GM.plantingZones[plantZoneNum];
+        
     }
     void Start()
     {
-        if(plantType != -1)
+        plantType = GM.plantingZones[plantZoneNum];
+        
+        if (plantType != -1)
         {
             Instantiate(GM.cacti[plantType], plantSpawn);
         }

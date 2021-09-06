@@ -36,7 +36,7 @@ public class Saver : MonoBehaviour
 
         //seperate dictionary strings and convert them back into dictionaries
         Dictionary<int, int> plantingZones  = JsonConvert.DeserializeObject<Dictionary<int, int>>(splits[0]);
-        
+        Debug.Log(splits[0]);
         //take dictionaries from save data and put them into game data
         GM.plantingZones = plantingZones;
         
