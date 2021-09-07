@@ -7,6 +7,7 @@ public class Item : MonoBehaviour
     public float sellValue;
     public int itemKey;
     public Sprite sprite;
+    public int amount;
 
     /*item keys
     0 - Empty Item

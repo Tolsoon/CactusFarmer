@@ -8,6 +8,7 @@ TagManager:
   - saveButton
   - loadButton
   - deleteButton
+  - item
   layers:
   - Default
   - TransparentFX

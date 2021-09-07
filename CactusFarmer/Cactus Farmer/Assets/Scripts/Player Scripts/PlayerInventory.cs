@@ -11,6 +11,7 @@ public class PlayerInventory : MonoBehaviour
 
     public Item selectedItem;
     public int mouseScroll;
+
     void Start()
     {
         for(int i = 0; i < inventorySprites.Length; i++)
@@ -51,5 +52,42 @@ public class PlayerInventory : MonoBehaviour
         }
 
         
+    }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.tag == ("item"))
+        {
+            pickupItem(hit.gameObject);
+        }
+    }
+
+
+    void pickupItem(GameObject pickup)    
+    {        
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            if(inventory[i].GetComponent<Item>().itemKey == pickup.GetComponent<Item>().itemKey)
+            {
+                setItemValues(pickup.GetComponent<Item>(), i);
+                Destroy(pickup);
+                break;
+            }
+            else if (inventory[i].GetComponent<Item>().itemKey == 0)
+            {
+                setItemValues(pickup.GetComponent<Item>(), i);                
+                Destroy(pickup);               
+                break;
+            }
+        }
+    }
+
+    void setItemValues(Item item, int i)
+    {       
+        inventory[i].GetComponent<Item>().sellValue = item.sellValue;        
+        inventory[i].GetComponent<Item>().itemKey = item.itemKey;
+        inventory[i].GetComponent<Item>().sprite = item.sprite;
+        inventory[i].GetComponent<Item>().amount += 1;
+        inventorySprites[i].sprite = item.sprite;
     }
 }
