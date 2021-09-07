@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    public float sellValue;
+    public int sellValue;
     public int itemKey;
     public Sprite sprite;
     public int amount;
+
+    public Sprite[] sprites;
+
+    
+
 
     /*item keys
     0 - Empty Item
@@ -16,5 +21,10 @@ public class Item : MonoBehaviour
       
     */
 
-    
+    public void setSprite()
+    {
+        sprite = sprites[itemKey];
+    }
+
+
 }

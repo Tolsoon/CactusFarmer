@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Cactus.cs" />
     <Compile Include="Assets\Scripts\Game Management\SaveSystem.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\Game Management\SaveManagerSpawner.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\Game Management\GameManager.cs" />
@@ -65,10 +66,8 @@
     <Compile Include="Assets\Scripts\Player Scripts\PlayerPlanting.cs" />
     <Compile Include="Assets\Scripts\Game Management\Saver.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Item.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Saves\save_3.txt" />
     <None Include="Assets\Saves\save_2.txt" />
     <None Include="Assets\Saves\save_1.txt" />
   </ItemGroup>

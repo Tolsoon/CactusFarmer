@@ -12,11 +12,24 @@ public class PlayerInventory : MonoBehaviour
     public Item selectedItem;
     public int mouseScroll;
 
+    public GameManager GM;
+
+    private void Awake()
+    {
+        GM = FindObjectOfType<GameManager>();        
+
+    }
     void Start()
     {
-        for(int i = 0; i < inventorySprites.Length; i++)
+        
+        for(int i = 0; i < inventory.Length; i++)
         {
+            inventory[i].GetComponent<Item>().itemKey = GM.inventoryItems[i][0];
+            inventory[i].GetComponent<Item>().amount = GM.inventoryItems[i][1];
+            inventory[i].GetComponent<Item>().sellValue = GM.inventoryItems[i][2];
+            inventory[i].GetComponent<Item>().setSprite();
             inventorySprites[i].sprite = inventory[i].GetComponent<Item>().sprite;
+
         }
 
         selectedItem = inventory[0].GetComponent<Item>();
@@ -82,6 +95,8 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
+    //sets the correct values in the correct inventory slot
+    //also sets the values for the GM saver
     void setItemValues(Item item, int i)
     {       
         inventory[i].GetComponent<Item>().sellValue = item.sellValue;        
@@ -89,5 +104,8 @@ public class PlayerInventory : MonoBehaviour
         inventory[i].GetComponent<Item>().sprite = item.sprite;
         inventory[i].GetComponent<Item>().amount += 1;
         inventorySprites[i].sprite = item.sprite;
+
+        GM.inventoryItems[i] = new int[] { item.itemKey, item.amount, item.sellValue }; 
+
     }
 }

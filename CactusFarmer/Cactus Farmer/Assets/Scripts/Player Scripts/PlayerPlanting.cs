@@ -19,7 +19,7 @@ public class PlayerPlanting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && canPlant)
         {
-            Instantiate(playerInventory.inventory[0], plantingZone.plantSpawn);
+            Instantiate(GM.cacti[0], plantingZone.plantSpawn);
             plantingZone.plantType = plantingZone.GetComponentInChildren<Cactus>().plantType;
             GM.plantingZones[plantingZone.plantZoneNum] = plantingZone.plantType;
 

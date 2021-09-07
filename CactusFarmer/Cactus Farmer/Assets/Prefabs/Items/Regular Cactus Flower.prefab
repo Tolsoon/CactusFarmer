@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6083218197241490450}
   m_Layer: 0
   m_Name: Regular Cactus Flower
-  m_TagString: Untagged
+  m_TagString: item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,9 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8c1a46c5cf9564db26b50179cbc4fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sellValue: 0
+  sellValue: 23
   itemKey: 2
-  sprite: {fileID: 0}
+  sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  amount: 15
+  sprites: []
 --- !u!135 &4638752839915494300
 SphereCollider:
   m_ObjectHideFlags: 0
