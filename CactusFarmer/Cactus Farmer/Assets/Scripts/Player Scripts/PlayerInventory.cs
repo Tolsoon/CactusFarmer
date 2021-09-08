@@ -23,12 +23,13 @@ public class PlayerInventory : MonoBehaviour
     {
         
         for(int i = 0; i < inventory.Length; i++)
-        {
+        {           
+                        
             inventory[i].GetComponent<Item>().itemKey = GM.inventoryItems[i][0];
             inventory[i].GetComponent<Item>().amount = GM.inventoryItems[i][1];
-            inventory[i].GetComponent<Item>().sellValue = GM.inventoryItems[i][2];
-            inventory[i].GetComponent<Item>().setSprite();
-            inventorySprites[i].sprite = inventory[i].GetComponent<Item>().sprite;
+            inventory[i].GetComponent<Item>().thisItem = inventory[i].GetComponent<Item>().items[inventory[i].GetComponent<Item>().itemKey];
+            inventorySprites[i].sprite = inventory[i].GetComponent<Item>().sprites[inventory[i].GetComponent<Item>().itemKey];
+            inventorySprites[i].GetComponentInChildren<Text>().text = inventory[i].GetComponent<Item>().amount.ToString();
 
         }
 
@@ -98,14 +99,37 @@ public class PlayerInventory : MonoBehaviour
     //sets the correct values in the correct inventory slot
     //also sets the values for the GM saver
     void setItemValues(Item item, int i)
-    {       
-        inventory[i].GetComponent<Item>().sellValue = item.sellValue;        
+    {         
+        inventory[i].GetComponent<Item>().sellValue = item.sellValue; 
+        
         inventory[i].GetComponent<Item>().itemKey = item.itemKey;
+
         inventory[i].GetComponent<Item>().sprite = item.sprite;
+
         inventory[i].GetComponent<Item>().amount += 1;
+
+        inventory[i].GetComponent<Item>().plantable = item.plantable;
+
+        inventory[i].GetComponent<Item>().plantedObj = item.plantedObj;
+
         inventorySprites[i].sprite = item.sprite;
 
-        GM.inventoryItems[i] = new int[] { item.itemKey, item.amount, item.sellValue }; 
+        inventory[i].GetComponent<Item>().thisItem = item.items[item.itemKey];
 
+        inventorySprites[i].GetComponentInChildren<Text>().text = inventory[i].GetComponent<Item>().amount.ToString();
+        
     }
+
+    public void UpdateSelectedItems()
+    {
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            if(inventory[i].GetComponent<Item>().amount <= 0)
+            {
+                inventorySprites[i].sprite = inventory[i].GetComponent<Item>().sprite;
+                inventorySprites[i].GetComponentInChildren<Text>().text = inventory[i].GetComponent<Item>().amount.ToString();
+            }
+        }
+    }
+
 }

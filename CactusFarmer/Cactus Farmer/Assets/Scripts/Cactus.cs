@@ -6,5 +6,11 @@ public class Cactus : MonoBehaviour
 {
     //string indicating what type of plant is here
     public int plantType;
+
+
+    /*
+        0 - Purple Flower Cactus
+     
+     */
     
 }

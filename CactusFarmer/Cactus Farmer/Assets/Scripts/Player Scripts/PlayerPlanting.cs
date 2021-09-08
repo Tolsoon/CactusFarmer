@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerPlanting : MonoBehaviour
 {
@@ -19,10 +20,18 @@ public class PlayerPlanting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && canPlant)
         {
-            Instantiate(GM.cacti[0], plantingZone.plantSpawn);
+            Instantiate(playerInventory.selectedItem.plantedObj, plantingZone.plantSpawn);
             plantingZone.plantType = plantingZone.GetComponentInChildren<Cactus>().plantType;
-            GM.plantingZones[plantingZone.plantZoneNum] = plantingZone.plantType;
+            playerInventory.selectedItem.amount -= 1;
 
+            playerInventory.inventorySprites[playerInventory.mouseScroll].GetComponentInChildren<Text>().text 
+                = playerInventory.selectedItem.GetComponent<Item>().amount.ToString();
+
+            if(playerInventory.selectedItem.amount <= 0)
+            {
+                playerInventory.selectedItem.SetToEmpty();
+                playerInventory.UpdateSelectedItems();
+            }
             canPlant = false;
         }
     }
@@ -32,7 +41,7 @@ public class PlayerPlanting : MonoBehaviour
         if (other.CompareTag("plantZone"))
         {
             plantingZone = other.GetComponent<PlantingZone>();
-            if(plantingZone.plantSpawn.childCount > 1)
+            if(plantingZone.plantSpawn.childCount > 1 || !playerInventory.selectedItem.plantable)
             {
                 canPlant = false;
             }

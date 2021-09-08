@@ -20,7 +20,7 @@ public class Saver : MonoBehaviour
     
     public void Save()
     {
-
+        GM.UpdateDicts();
 
         //converts dictionarys into json file seperated by "n" so that it can be split later
         string json = JsonConvert.SerializeObject(GM.plantingZones, Formatting.Indented) + "n" + JsonConvert.SerializeObject(GM.inventoryItems, Formatting.Indented) + "n";
