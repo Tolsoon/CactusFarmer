@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerPlanting : MonoBehaviour
 {
     public bool canPlant;
+    public bool canHarvest;
 
     public PlantingZone plantingZone;
     public PlayerInventory playerInventory;
@@ -24,15 +25,22 @@ public class PlayerPlanting : MonoBehaviour
             plantingZone.plantType = plantingZone.GetComponentInChildren<Cactus>().plantType;
             playerInventory.selectedItem.amount -= 1;
 
-            playerInventory.inventorySprites[playerInventory.mouseScroll].GetComponentInChildren<Text>().text 
+            playerInventory.inventorySprites[playerInventory.mouseScroll].GetComponentInChildren<Text>().text
                 = playerInventory.selectedItem.GetComponent<Item>().amount.ToString();
 
-            if(playerInventory.selectedItem.amount <= 0)
+            if (playerInventory.selectedItem.amount <= 0)
             {
                 playerInventory.selectedItem.SetToEmpty();
                 playerInventory.UpdateSelectedItems();
             }
             canPlant = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && canHarvest)
+        {
+            Instantiate(plantingZone.GetComponentInChildren<Cactus>().flower, plantingZone.plantSpawn);
+
+            Destroy(plantingZone.GetComponentInChildren<Cactus>().gameObject);
         }
     }
 
@@ -41,6 +49,7 @@ public class PlayerPlanting : MonoBehaviour
         if (other.CompareTag("plantZone"))
         {
             plantingZone = other.GetComponent<PlantingZone>();
+
             if(plantingZone.plantSpawn.childCount > 1 || !playerInventory.selectedItem.plantable)
             {
                 canPlant = false;
@@ -49,6 +58,19 @@ public class PlayerPlanting : MonoBehaviour
             {
                 canPlant = true;
             }
+
+            if(plantingZone.plantSpawn.childCount >= 1)
+            {
+                if (plantingZone.GetComponentInChildren<Cactus>().growthStage == plantingZone.GetComponentInChildren<Cactus>().harvestStage)
+                {
+                    canHarvest = true;
+                }
+                else
+                {
+                    canHarvest = false;
+                }
+            }
+            
             
         }
     }

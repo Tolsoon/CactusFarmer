@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg20678"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="selection.svg"
+   inkscape:export-filename="C:\Users\tolso\OneDrive\Documents\GitHub\CactusFarmer\Art Assets\2D Art\Seed Packets\selection.png"
+   inkscape:export-xdpi="174.57201"
+   inkscape:export-ydpi="174.57201"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview20680"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4823793"
+     inkscape:cx="375.40998"
+     inkscape:cy="548.10532"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer7">
+    <sodipodi:guide
+       position="0,297"
+       orientation="0,793.70079"
+       id="guide21692" />
+    <sodipodi:guide
+       position="210,297"
+       orientation="1122.5197,0"
+       id="guide21694" />
+    <sodipodi:guide
+       position="210,0"
+       orientation="0,-793.70079"
+       id="guide21696" />
+    <sodipodi:guide
+       position="0,0"
+       orientation="-1122.5197,0"
+       id="guide21698" />
+  </sodipodi:namedview>
+  <defs
+     id="defs20675" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="Layer 2">
+    <path
+       style="fill:#2b0000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 25.746505,106.51986 V 80.773351 H 49.97851 v 6.310418 H 31.804506 v 19.420771 z"
+       id="path20748"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#2b0000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 149.37014,79.982387 h 25.7465 v 24.232003 h -6.31042 V 86.040387 h -19.42076 z"
+       id="path20748-4"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#2b0000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 173.8241,190.95728 v 25.7465 h -24.232 v -6.31042 h 18.174 V 190.9726 Z"
+       id="path20748-4-6"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#2b0000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 52.854018,215.76821 h -25.7465 v -24.232 h 6.31042 v 18.174 h 19.42076 z"
+       id="path20748-4-6-2"
+       sodipodi:nodetypes="ccccccc" />
+  </g>
+</svg>

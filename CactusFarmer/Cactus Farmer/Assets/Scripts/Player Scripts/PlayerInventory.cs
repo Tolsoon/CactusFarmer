@@ -78,21 +78,36 @@ public class PlayerInventory : MonoBehaviour
 
 
     void pickupItem(GameObject pickup)    
-    {        
+    {
+        int a = 0;
+
         for (int i = 0; i < inventory.Length; i++)
-        {
-            if(inventory[i].GetComponent<Item>().itemKey == pickup.GetComponent<Item>().itemKey)
+        {            
+            if (inventory[i].GetComponent<Item>().itemKey == pickup.GetComponent<Item>().itemKey)
             {
                 setItemValues(pickup.GetComponent<Item>(), i);
                 Destroy(pickup);
                 break;
             }
-            else if (inventory[i].GetComponent<Item>().itemKey == 0)
+            else
             {
-                setItemValues(pickup.GetComponent<Item>(), i);                
-                Destroy(pickup);               
-                break;
+                a += 1;
             }
+
+            if(a == inventory.Length)
+            {
+                for (int c = 0; c < inventory.Length; c++)
+                {
+                    if (inventory[c].GetComponent<Item>().itemKey == 0)
+                    {
+                        setItemValues(pickup.GetComponent<Item>(), c);
+                        Destroy(pickup);
+                        break;
+                    }
+                }
+                
+            }
+            
         }
     }
 

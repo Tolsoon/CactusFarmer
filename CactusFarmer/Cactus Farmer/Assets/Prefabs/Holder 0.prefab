@@ -51,12 +51,13 @@ MonoBehaviour:
   itemKey: 0
   amount: 0
   sellValue: 0
-  sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 0}
   plantable: 0
+  plantedObj: {fileID: 0}
   thisItem: {fileID: 2106183025147464687}
   sprites:
-  - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: b7a02e7bacda1bd48a326d33ab2b321d, type: 3}
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   items:
   - {fileID: 2106183025147464687}

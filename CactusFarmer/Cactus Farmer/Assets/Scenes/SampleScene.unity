@@ -674,7 +674,7 @@ RectTransform:
   m_GameObject: {fileID: 362735470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.27, y: 1.27, z: 1.27}
   m_Children: []
   m_Father: {fileID: 1558428562}
   m_RootOrder: 6
@@ -704,7 +704,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 779d94240d02fc7408126acc5fdcc0c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1247,7 +1247,7 @@ RectTransform:
   m_GameObject: {fileID: 649095596}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.27, y: 1.27, z: 1.27}
   m_Children: []
   m_Father: {fileID: 1558428562}
   m_RootOrder: 3
@@ -1277,7 +1277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 779d94240d02fc7408126acc5fdcc0c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1508,7 +1508,7 @@ RectTransform:
   m_GameObject: {fileID: 729727323}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.27, y: 1.27, z: 1.27}
   m_Children: []
   m_Father: {fileID: 1558428562}
   m_RootOrder: 1
@@ -1538,7 +1538,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 779d94240d02fc7408126acc5fdcc0c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2052,7 +2052,7 @@ RectTransform:
   m_GameObject: {fileID: 856398447}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.27, y: 1.27, z: 1.27}
   m_Children: []
   m_Father: {fileID: 1558428562}
   m_RootOrder: 5
@@ -2082,7 +2082,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 779d94240d02fc7408126acc5fdcc0c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2550,7 +2550,7 @@ RectTransform:
   m_GameObject: {fileID: 1056060010}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.27, y: 1.27, z: 1.27}
   m_Children: []
   m_Father: {fileID: 1558428562}
   m_RootOrder: 0
@@ -2573,14 +2573,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9433962, g: 0.022249907, b: 0.022249907, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 779d94240d02fc7408126acc5fdcc0c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3037,7 +3037,7 @@ RectTransform:
   m_GameObject: {fileID: 1311776022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.27, y: 1.27, z: 1.27}
   m_Children: []
   m_Father: {fileID: 1558428562}
   m_RootOrder: 7
@@ -3067,7 +3067,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 779d94240d02fc7408126acc5fdcc0c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3482,7 +3482,7 @@ RectTransform:
   m_GameObject: {fileID: 1535870927}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.27, y: 1.27, z: 1.27}
   m_Children: []
   m_Father: {fileID: 1558428562}
   m_RootOrder: 4
@@ -3512,7 +3512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 779d94240d02fc7408126acc5fdcc0c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4638,7 +4638,7 @@ RectTransform:
   m_GameObject: {fileID: 2105720409}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.27, y: 1.27, z: 1.27}
   m_Children: []
   m_Father: {fileID: 1558428562}
   m_RootOrder: 2
@@ -4668,7 +4668,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 779d94240d02fc7408126acc5fdcc0c2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4887,8 +4887,8 @@ MonoBehaviour:
   plantedObj: {fileID: 0}
   thisItem: {fileID: 4915724553275159397}
   sprites:
-  - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 21300000, guid: 779d94240d02fc7408126acc5fdcc0c2, type: 3}
+  - {fileID: 21300000, guid: b7a02e7bacda1bd48a326d33ab2b321d, type: 3}
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   items:
   - {fileID: 2106183025147464687, guid: 54a6ca04daef4de42901709568c17333, type: 3}
@@ -4957,13 +4957,13 @@ MonoBehaviour:
   itemKey: 1
   amount: 1
   sellValue: 5
-  sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 21300000, guid: b7a02e7bacda1bd48a326d33ab2b321d, type: 3}
   plantable: 1
   plantedObj: {fileID: 3825099741365598310, guid: ae1ca5733ca599d4486b20b91060ed90, type: 3}
   thisItem: {fileID: 5407635150650604672}
   sprites:
-  - {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 21300000, guid: 779d94240d02fc7408126acc5fdcc0c2, type: 3}
+  - {fileID: 21300000, guid: b7a02e7bacda1bd48a326d33ab2b321d, type: 3}
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   items:
   - {fileID: 2106183025147464687, guid: 54a6ca04daef4de42901709568c17333, type: 3}

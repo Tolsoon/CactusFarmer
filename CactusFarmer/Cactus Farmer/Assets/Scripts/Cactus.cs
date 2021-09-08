@@ -6,6 +6,9 @@ public class Cactus : MonoBehaviour
 {
     //string indicating what type of plant is here
     public int plantType;
+    public int growthStage;
+    public int harvestStage;
+    public GameObject flower;
 
 
     /*
