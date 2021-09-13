@@ -66,10 +66,13 @@
     <Compile Include="Assets\Scripts\Player Scripts\PlayerPlanting.cs" />
     <Compile Include="Assets\Scripts\Game Management\Saver.cs" />
     <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Day Night Cycle\LightingPreset.cs" />
+    <Compile Include="Assets\Scripts\Day Night Cycle\LightingManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Saves\save_3.txt" />
     <None Include="Assets\Saves\save_2.txt" />
+    <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />
     <None Include="Assets\Saves\save_4.txt" />
     <None Include="Assets\Saves\save_1.txt" />
   </ItemGroup>

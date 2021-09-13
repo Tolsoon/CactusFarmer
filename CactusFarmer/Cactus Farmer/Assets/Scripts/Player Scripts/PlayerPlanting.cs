@@ -19,29 +19,37 @@ public class PlayerPlanting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && canPlant)
+        if(plantingZone != null)
         {
-            Instantiate(playerInventory.selectedItem.plantedObj, plantingZone.plantSpawn);
-            plantingZone.plantType = plantingZone.GetComponentInChildren<Cactus>().plantType;
-            playerInventory.selectedItem.amount -= 1;
-
-            playerInventory.inventorySprites[playerInventory.mouseScroll].GetComponentInChildren<Text>().text
-                = playerInventory.selectedItem.GetComponent<Item>().amount.ToString();
-
-            if (playerInventory.selectedItem.amount <= 0)
+            if (Input.GetKeyDown(KeyCode.E) && canPlant)
             {
-                playerInventory.selectedItem.SetToEmpty();
-                playerInventory.UpdateSelectedItems();
+                Instantiate(playerInventory.selectedItem.plantedObj, plantingZone.plantSpawn);
+                plantingZone.plantType = plantingZone.GetComponentInChildren<Cactus>().plantType;
+                playerInventory.selectedItem.amount -= 1;
+
+                playerInventory.inventorySprites[playerInventory.mouseScroll].GetComponentInChildren<Text>().text
+                    = playerInventory.selectedItem.GetComponent<Item>().amount.ToString();
+
+                if (playerInventory.selectedItem.amount <= 0)
+                {
+                    playerInventory.selectedItem.SetToEmpty();
+                    playerInventory.UpdateSelectedItems();
+                }
+                canPlant = false;
             }
-            canPlant = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && canHarvest)
+        if (plantingZone != null)
         {
-            Instantiate(plantingZone.GetComponentInChildren<Cactus>().flower, plantingZone.plantSpawn);
-
-            Destroy(plantingZone.GetComponentInChildren<Cactus>().gameObject);
+            if (Input.GetKeyDown(KeyCode.E) && canHarvest)
+            {
+                Instantiate(plantingZone.GetComponentInChildren<Cactus>().flower, plantingZone.plantSpawn);
+                plantingZone.plantType = -1;
+                Destroy(plantingZone.GetComponentInChildren<Cactus>().gameObject);
+                canHarvest = false;
+            }
         }
+       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -50,7 +58,7 @@ public class PlayerPlanting : MonoBehaviour
         {
             plantingZone = other.GetComponent<PlantingZone>();
 
-            if(plantingZone.plantSpawn.childCount > 1 || !playerInventory.selectedItem.plantable)
+            if(plantingZone.plantSpawn.childCount >= 1 || !playerInventory.selectedItem.plantable)
             {
                 canPlant = false;
             }
@@ -61,7 +69,7 @@ public class PlayerPlanting : MonoBehaviour
 
             if(plantingZone.plantSpawn.childCount >= 1)
             {
-                if (plantingZone.GetComponentInChildren<Cactus>().growthStage == plantingZone.GetComponentInChildren<Cactus>().harvestStage)
+                if (plantingZone.GetComponentInChildren<Cactus>().growthStage >= plantingZone.GetComponentInChildren<Cactus>().harvestStage)
                 {
                     canHarvest = true;
                 }

@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public PlayerInventory PI;
+    public int day;
+    public float dayTime;
 
     private void Awake()
     {
@@ -52,6 +54,11 @@ public class GameManager : MonoBehaviour
         {
             plantingZones[plantZone.plantZoneNum] = plantZone.plantType;
         }
+    }
+
+    private void Update()
+    {
+        
     }
 
 
