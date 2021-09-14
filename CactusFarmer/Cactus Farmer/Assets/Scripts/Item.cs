@@ -10,7 +10,8 @@ public class Item : MonoBehaviour
 
     //varibles not needed to save
     public int sellValue;    
-    public Sprite sprite;  
+    public Sprite sprite;
+    public bool sellable;
     //whether or not you can plant this
     public bool plantable;
     //what you plant
@@ -39,6 +40,7 @@ public class Item : MonoBehaviour
         sprite = tempItem.sprite;
         plantable = tempItem.plantable;
         plantedObj = tempItem.plantedObj;
+        sellable = tempItem.sellable;
 
     }
 
@@ -57,6 +59,7 @@ public class Item : MonoBehaviour
         plantable = false;
         thisItem = items[itemKey];
         plantedObj = null;
+        sellable = false;
     }
 
     

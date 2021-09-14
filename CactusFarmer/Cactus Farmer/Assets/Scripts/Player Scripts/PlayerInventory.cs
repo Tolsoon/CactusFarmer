@@ -14,6 +14,11 @@ public class PlayerInventory : MonoBehaviour
 
     public GameManager GM;
 
+    public bool canSell;
+    public bool canBuy;
+    public int money;
+    public Text moneyText;
+
     private void Awake()
     {
         GM = FindObjectOfType<GameManager>();        
@@ -65,16 +70,61 @@ public class PlayerInventory : MonoBehaviour
             selectedItem = inventory[mouseScroll].GetComponent<Item>();
         }
 
+        if(selectedItem.itemKey != -1)
+        {
+            if (Input.GetKeyDown(KeyCode.E) && canSell && selectedItem.sellable)
+            {
+                Debug.Log("Selling");
+                money += selectedItem.sellValue;
+                moneyText.text = "Money: " + money.ToString();
+                selectedItem.amount -= 1;
+                if(selectedItem.amount <= 0)
+                {
+                    selectedItem.SetToEmpty();
+                    UpdateSelectedItems();
+                }
+            }
+        }
+
         
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.gameObject.tag == ("item"))
+        if (hit.gameObject.CompareTag("item"))
         {
             pickupItem(hit.gameObject);
         }
+
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("sellZone"))
+        {            
+            canSell = true;
+        }
+
+        if (other.gameObject.CompareTag("buyZone"))
+        {
+            canBuy = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("sellZone"))
+        {
+            canSell = false;
+        }
+
+        if (other.gameObject.CompareTag("buyZone"))
+        {
+            canBuy = false;
+        }
+    }
+
+
 
 
     void pickupItem(GameObject pickup)    
@@ -112,7 +162,7 @@ public class PlayerInventory : MonoBehaviour
     }
 
     //sets the correct values in the correct inventory slot
-    //also sets the values for the GM saver
+    
     void setItemValues(Item item, int i)
     {         
         inventory[i].GetComponent<Item>().sellValue = item.sellValue; 
@@ -127,6 +177,8 @@ public class PlayerInventory : MonoBehaviour
 
         inventory[i].GetComponent<Item>().plantedObj = item.plantedObj;
 
+        inventory[i].GetComponent<Item>().sellable = item.sellable;
+
         inventorySprites[i].sprite = item.sprite;
 
         inventory[i].GetComponent<Item>().thisItem = item.items[item.itemKey];
@@ -135,6 +187,7 @@ public class PlayerInventory : MonoBehaviour
         
     }
 
+    //update inventory bar sprites
     public void UpdateSelectedItems()
     {
         for (int i = 0; i < inventory.Length; i++)

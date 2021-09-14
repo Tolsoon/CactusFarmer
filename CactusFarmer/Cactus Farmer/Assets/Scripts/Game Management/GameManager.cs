@@ -13,11 +13,12 @@ public class GameManager : MonoBehaviour
         PI = FindObjectOfType<PlayerInventory>();
     }
 
-    public Dictionary<int, int> plantingZones = new Dictionary<int, int>()
+    //first number is which planting zone, second number is what is planted, third is the growth stage
+    public Dictionary<int, int[]> plantingZones = new Dictionary<int, int[]>()
     {
-        {1, -1},
-        {2, -1},
-        {3, -1},
+        {1, new int[] {-1,0}},
+        {2, new int[] {-1,0}},
+        {3, new int[] {-1,0}},
     };
 
     //dictionary of items in inventory, the fist number is the itemKey the second is the quantity, third is sell value,
@@ -52,13 +53,12 @@ public class GameManager : MonoBehaviour
 
         foreach(PlantingZone plantZone in plantZones)
         {
-            plantingZones[plantZone.plantZoneNum] = plantZone.plantType;
+            if(plantZone.plantType != -1)
+            {
+                plantingZones[plantZone.plantZoneNum] = new int[] { plantZone.plantType, plantZone.gameObject.GetComponentInChildren<Cactus>().growthStage};
+            }
+            
         }
-    }
-
-    private void Update()
-    {
-        
     }
 
 

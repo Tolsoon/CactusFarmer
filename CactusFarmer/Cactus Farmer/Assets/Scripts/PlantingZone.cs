@@ -10,6 +10,12 @@ public class PlantingZone : MonoBehaviour
     public int plantZoneNum;    
     //number indicates which plant is here
     public int plantType;
+    /*
+       -1 - no plant
+       0 - purple flower cactus
+
+     */
+
 
     public GameManager GM;
     private void Awake()
@@ -19,11 +25,12 @@ public class PlantingZone : MonoBehaviour
     }
     void Start()
     {
-        plantType = GM.plantingZones[plantZoneNum];
+        plantType = GM.plantingZones[plantZoneNum][0];
         
         if (plantType != -1)
         {
             Instantiate(GM.cacti[plantType], plantSpawn);
+            GetComponentInChildren<Cactus>().growthStage = GM.plantingZones[plantZoneNum][1];
         }
     }
 

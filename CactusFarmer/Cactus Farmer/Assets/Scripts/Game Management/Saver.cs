@@ -35,7 +35,7 @@ public class Saver : MonoBehaviour
         string[] splits = saveString.Split('n');
 
         //seperate dictionary strings and convert them back into dictionaries
-        Dictionary<int, int> plantingZones  = JsonConvert.DeserializeObject<Dictionary<int, int>>(splits[0]);
+        Dictionary<int, int[]> plantingZones  = JsonConvert.DeserializeObject<Dictionary<int, int[]>>(splits[0]);
         Dictionary<int, int[]> inventoryItems = JsonConvert.DeserializeObject<Dictionary<int, int[]>>(splits[1]);
         Debug.Log(splits[0]);
         Debug.Log(splits[1]);

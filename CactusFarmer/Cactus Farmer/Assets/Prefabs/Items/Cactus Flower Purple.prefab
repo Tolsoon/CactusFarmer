@@ -50,6 +50,7 @@ MonoBehaviour:
   amount: 15
   sellValue: 23
   sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  sellable: 1
   plantable: 0
   plantedObj: {fileID: 0}
   thisItem: {fileID: 3467488572555956155}

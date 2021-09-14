@@ -9,6 +9,8 @@ TagManager:
   - loadButton
   - deleteButton
   - item
+  - sellZone
+  - buyZone
   layers:
   - Default
   - TransparentFX

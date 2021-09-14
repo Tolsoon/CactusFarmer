@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantType: 0
-  growthStage: 1
+  growthStage: 0
   harvestStage: 2
   flower: {fileID: 3467488572555956155, guid: 35f66a3a710fc8b49b1aea5b88c0a4cc, type: 3}
 --- !u!1 &5231124561154244799
