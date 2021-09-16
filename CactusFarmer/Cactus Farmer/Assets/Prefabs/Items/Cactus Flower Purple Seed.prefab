@@ -61,7 +61,7 @@ MonoBehaviour:
   items:
   - {fileID: 2106183025147464687, guid: 54a6ca04daef4de42901709568c17333, type: 3}
   - {fileID: 225493974568962947}
-  - {fileID: 3467488572555956155, guid: 35f66a3a710fc8b49b1aea5b88c0a4cc, type: 3}
+  - {fileID: 6531407900392657422, guid: 35f66a3a710fc8b49b1aea5b88c0a4cc, type: 3}
 --- !u!135 &6131053868917717256
 SphereCollider:
   m_ObjectHideFlags: 0

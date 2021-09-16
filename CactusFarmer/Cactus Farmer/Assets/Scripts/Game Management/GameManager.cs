@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -34,8 +35,22 @@ public class GameManager : MonoBehaviour
         {7, new int[] {0,0,0}},
     };
 
+    //dictionary of varibles that need to be saved: first is the day, second is player money
+    public Dictionary<int, int> varSaved = new Dictionary<int, int>()
+    {
+        {0, 0},
+        {1, 0},
+        
+    };
+
     public GameObject[] cacti;
+
+    //array of all items that are purchasable in shop
     public GameObject[] items;
+
+    /*
+     0 - purple flower cactus seed
+     */
 
     public void UpdateDicts()
     {
@@ -58,6 +73,16 @@ public class GameManager : MonoBehaviour
                 plantingZones[plantZone.plantZoneNum] = new int[] { plantZone.plantType, plantZone.gameObject.GetComponentInChildren<Cactus>().growthStage};
             }
             
+        }
+    }
+
+    public void BuyItem(Item item)
+    {
+        if(PI.money >= Mathf.RoundToInt(item.sellValue * 1.2f))
+        {
+            PI.buyItem(item);
+            PI.money -= Mathf.RoundToInt(item.sellValue * 1.2f);
+            PI.moneyText.text = "Money: " + PI.money.ToString();
         }
     }
 

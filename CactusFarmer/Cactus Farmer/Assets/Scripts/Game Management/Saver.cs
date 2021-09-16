@@ -23,7 +23,9 @@ public class Saver : MonoBehaviour
         GM.UpdateDicts();
 
         //converts dictionarys into json file seperated by "n" so that it can be split later
-        string json = JsonConvert.SerializeObject(GM.plantingZones, Formatting.Indented) + "n" + JsonConvert.SerializeObject(GM.inventoryItems, Formatting.Indented) + "n";
+        string json = JsonConvert.SerializeObject(GM.plantingZones, Formatting.Indented) + "n" 
+            + JsonConvert.SerializeObject(GM.inventoryItems, Formatting.Indented) + "n" 
+            + JsonConvert.SerializeObject(GM.varSaved, Formatting.Indented) + "n";
         SaveSystem.Save(json);
         //debug line if you need to view saved json file
         Debug.Log(json);
@@ -37,11 +39,14 @@ public class Saver : MonoBehaviour
         //seperate dictionary strings and convert them back into dictionaries
         Dictionary<int, int[]> plantingZones  = JsonConvert.DeserializeObject<Dictionary<int, int[]>>(splits[0]);
         Dictionary<int, int[]> inventoryItems = JsonConvert.DeserializeObject<Dictionary<int, int[]>>(splits[1]);
+        Dictionary<int, int> varSaved = JsonConvert.DeserializeObject<Dictionary<int, int>>(splits[2]);
         Debug.Log(splits[0]);
         Debug.Log(splits[1]);
+        Debug.Log(splits[2]);
         //take dictionaries from save data and put them into game data
         GM.plantingZones = plantingZones;
         GM.inventoryItems = inventoryItems;
+        GM.varSaved = varSaved;
         
 
     }

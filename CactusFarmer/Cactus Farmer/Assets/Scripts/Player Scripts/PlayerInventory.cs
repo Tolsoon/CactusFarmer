@@ -15,7 +15,10 @@ public class PlayerInventory : MonoBehaviour
     public GameManager GM;
 
     public bool canSell;
+
     public bool canBuy;
+    public GameObject buyMenu;
+
     public int money;
     public Text moneyText;
 
@@ -74,17 +77,20 @@ public class PlayerInventory : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E) && canSell && selectedItem.sellable)
             {
-                Debug.Log("Selling");
+                
                 money += selectedItem.sellValue;
                 moneyText.text = "Money: " + money.ToString();
                 selectedItem.amount -= 1;
-                if(selectedItem.amount <= 0)
+                inventorySprites[mouseScroll].GetComponentInChildren<Text>().text = inventory[mouseScroll].GetComponent<Item>().amount.ToString();
+                if (selectedItem.amount <= 0)
                 {
                     selectedItem.SetToEmpty();
                     UpdateSelectedItems();
                 }
             }
         }
+
+        
 
         
     }
@@ -108,6 +114,7 @@ public class PlayerInventory : MonoBehaviour
         if (other.gameObject.CompareTag("buyZone"))
         {
             canBuy = true;
+            buyMenu.SetActive(true);
         }
     }
 
@@ -121,13 +128,14 @@ public class PlayerInventory : MonoBehaviour
         if (other.gameObject.CompareTag("buyZone"))
         {
             canBuy = false;
+            buyMenu.SetActive(false);
         }
     }
 
 
 
 
-    void pickupItem(GameObject pickup)    
+   void pickupItem(GameObject pickup)    
     {
         int a = 0;
 
@@ -163,7 +171,7 @@ public class PlayerInventory : MonoBehaviour
 
     //sets the correct values in the correct inventory slot
     
-    void setItemValues(Item item, int i)
+    public void setItemValues(Item item, int i)
     {         
         inventory[i].GetComponent<Item>().sellValue = item.sellValue; 
         
@@ -187,6 +195,40 @@ public class PlayerInventory : MonoBehaviour
         
     }
 
+
+    public void buyItem(Item item)
+    {
+        int a = 0;
+
+        for (int i = 0; i < inventory.Length; i++)
+        {
+            if (inventory[i].GetComponent<Item>().itemKey == item.itemKey)
+            {
+                setItemValues(item.GetComponent<Item>(), i);
+               
+                break;
+            }
+            else
+            {
+                a += 1;
+            }
+
+            if (a == inventory.Length)
+            {
+                for (int c = 0; c < inventory.Length; c++)
+                {
+                    if (inventory[c].GetComponent<Item>().itemKey == 0)
+                    {
+                        setItemValues(item.GetComponent<Item>(), c);
+                        
+                        break;
+                    }
+                }
+
+            }
+
+        }
+    }
     //update inventory bar sprites
     public void UpdateSelectedItems()
     {
