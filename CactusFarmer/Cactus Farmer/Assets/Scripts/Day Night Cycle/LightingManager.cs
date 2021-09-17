@@ -19,6 +19,7 @@ public class LightingManager : MonoBehaviour
     private void Awake()
     {
         GM = GetComponent<GameManager>();
+        dayText.text = "Day: " + GM.day.ToString();
     }
     private void Update()
     {
@@ -95,6 +96,7 @@ public class LightingManager : MonoBehaviour
             if(plantZone.plantType != -1)
             {
                 plantZone.gameObject.GetComponentInChildren<Cactus>().growthStage += 1;
+                plantZone.gameObject.GetComponentInChildren<Cactus>().CheckGrowth();
             }
         }
     }

@@ -15,5 +15,22 @@ public class Cactus : MonoBehaviour
         0 - Purple Flower Cactus
      
      */
-    
+
+    private void Start()
+    {
+        transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+    }
+
+    public void CheckGrowth()
+    {
+        if (growthStage >= harvestStage)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+        else if (growthStage >= harvestStage / 2)
+        {
+            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        }
+    }
+
 }

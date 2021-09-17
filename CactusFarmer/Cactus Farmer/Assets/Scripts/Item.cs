@@ -20,8 +20,7 @@ public class Item : MonoBehaviour
 
     public GameObject thisItem;
 
-    public Sprite[] sprites;
-    public GameObject[] items;
+    public GameManager GM;
 
 
 
@@ -33,6 +32,10 @@ public class Item : MonoBehaviour
       
     */
 
+    private void Awake()
+    {
+        GM = FindObjectOfType<GameManager>();
+    }
     private void Start()
     {
         Item tempItem = thisItem.GetComponent<Item>();
@@ -46,7 +49,7 @@ public class Item : MonoBehaviour
 
     public void setSprite()
     {
-        sprite = sprites[itemKey];
+        sprite = GM.items[itemKey].GetComponent<Item>().sprite;
 
     }
 
@@ -54,10 +57,10 @@ public class Item : MonoBehaviour
     {
         sellValue = 0;
         itemKey = 0;
-        sprite = sprites[itemKey];
+        sprite = GM.items[itemKey].GetComponent<Item>().sprite;
         amount = 0;
         plantable = false;
-        thisItem = items[itemKey];
+        thisItem = GM.items[itemKey];
         plantedObj = null;
         sellable = false;
     }

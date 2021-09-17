@@ -9,9 +9,21 @@ public class GameManager : MonoBehaviour
     public int day;
     public float dayTime;
 
+    public GameObject[] cacti;
+
+    //array of all items that are purchasable in shop
+    public GameObject[] purchaseItems;
+    //array of all items in game
+    public GameObject[] items;
+    
+
+    /*
+     0 - purple flower cactus seed
+     */
     private void Awake()
     {
         PI = FindObjectOfType<PlayerInventory>();
+        day = varSaved[0];
     }
 
     //first number is which planting zone, second number is what is planted, third is the growth stage
@@ -43,14 +55,7 @@ public class GameManager : MonoBehaviour
         
     };
 
-    public GameObject[] cacti;
-
-    //array of all items that are purchasable in shop
-    public GameObject[] items;
-
-    /*
-     0 - purple flower cactus seed
-     */
+    
 
     public void UpdateDicts()
     {
@@ -74,6 +79,9 @@ public class GameManager : MonoBehaviour
             }
             
         }
+
+        varSaved[0] = day;
+        varSaved[1] = PI.money;
     }
 
     public void BuyItem(Item item)

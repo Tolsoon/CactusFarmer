@@ -24,28 +24,27 @@ public class PlayerInventory : MonoBehaviour
 
     private void Awake()
     {
-        GM = FindObjectOfType<GameManager>();        
+        GM = FindObjectOfType<GameManager>();
 
-    }
-    void Start()
-    {
-        
-        for(int i = 0; i < inventory.Length; i++)
-        {           
-                        
+        for (int i = 0; i < inventory.Length; i++)
+        {
+
             inventory[i].GetComponent<Item>().itemKey = GM.inventoryItems[i][0];
             inventory[i].GetComponent<Item>().amount = GM.inventoryItems[i][1];
-            inventory[i].GetComponent<Item>().thisItem = inventory[i].GetComponent<Item>().items[inventory[i].GetComponent<Item>().itemKey];
-            inventorySprites[i].sprite = inventory[i].GetComponent<Item>().sprites[inventory[i].GetComponent<Item>().itemKey];
+            inventory[i].GetComponent<Item>().thisItem = GM.items[inventory[i].GetComponent<Item>().itemKey].GetComponent<Item>().thisItem;
+            inventorySprites[i].sprite = GM.items[inventory[i].GetComponent<Item>().itemKey].GetComponent<Item>().sprite;
             inventorySprites[i].GetComponentInChildren<Text>().text = inventory[i].GetComponent<Item>().amount.ToString();
 
         }
 
+        money = GM.varSaved[1];
+
         selectedItem = inventory[0].GetComponent<Item>();
         bgs[0].SetActive(true);
-        
-    }
+        moneyText.text = "Money: " + money.ToString();
 
+    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -189,7 +188,7 @@ public class PlayerInventory : MonoBehaviour
 
         inventorySprites[i].sprite = item.sprite;
 
-        inventory[i].GetComponent<Item>().thisItem = item.items[item.itemKey];
+        inventory[i].GetComponent<Item>().thisItem = item.GM.items[item.itemKey];
 
         inventorySprites[i].GetComponentInChildren<Text>().text = inventory[i].GetComponent<Item>().amount.ToString();
         

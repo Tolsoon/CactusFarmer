@@ -72,8 +72,6 @@
     <Compile Include="Assets\Scripts\UpdatePrice.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Saves\save_3.txt" />
-    <None Include="Assets\Saves\save_2.txt" />
     <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />
     <None Include="Assets\Saves\save_1.txt" />
   </ItemGroup>
