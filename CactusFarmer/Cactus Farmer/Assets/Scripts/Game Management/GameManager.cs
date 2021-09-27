@@ -15,10 +15,13 @@ public class GameManager : MonoBehaviour
     public GameObject[] purchaseItems;
     //array of all items in game
     public GameObject[] items;
-    
+
 
     /*
      0 - purple flower cactus seed
+     1 - red flower cactus seed
+     2 - blue flower cactus seed
+     3 - orange flower cactus seed
      */
     private void Awake()
     {

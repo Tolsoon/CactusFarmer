@@ -1,0 +1,715 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 8123 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/tolso/OneDrive/Documents/GitHub/CactusFarmer/CactusFarmer/Cactus Farmer
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63580
+Successfully changed project path to: C:/Users/tolso/OneDrive/Documents/GitHub/CactusFarmer/CactusFarmer/Cactus Farmer
+C:/Users/tolso/OneDrive/Documents/GitHub/CactusFarmer/CactusFarmer/Cactus Farmer
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 28.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/tolso/OneDrive/Documents/GitHub/CactusFarmer/CactusFarmer/Cactus Farmer/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 570 Series (ID=0x67df)
+    Vendor:   
+    VRAM:     4041 MB
+    Driver:   23.20.832.0
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56272
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001659 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 27.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.484 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003198 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 26.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.070 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1590 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.1 MB.
+System memory in use after: 92.9 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2053.
+Total: 1.911800 ms (FindLiveObjects: 0.159400 ms CreateObjectMapping: 0.037800 ms MarkObjects: 1.513300 ms  DeleteObjects: 0.200500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/New Terrain 1.asset
+  artifactKey: Guid(5d29732cbf0beea42b54d67ac449aed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 1.asset using Guid(5d29732cbf0beea42b54d67ac449aed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945f42312753a56266912f0870712266') in 0.035613 seconds 
+  Import took 0.038900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 281.495627 seconds.
+  path: Assets/desert1.png
+  artifactKey: Guid(53da386a3d5080c449fbfd78484756a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/desert1.png using Guid(53da386a3d5080c449fbfd78484756a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc6d5645ecea4e72ba34df8d9b4808d') in 0.054529 seconds 
+  Import took 0.057981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 74.712704 seconds.
+  path: Assets/desert1.png
+  artifactKey: Guid(53da386a3d5080c449fbfd78484756a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/desert1.png using Guid(53da386a3d5080c449fbfd78484756a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '858e38e544721ae725e2ff0ae2b81d8c') in 0.010130 seconds 
+  Import took 0.013313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.459341 seconds.
+  path: Assets/New Terrain 2.asset
+  artifactKey: Guid(c9f249afad282944babf05dd56534012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 2.asset using Guid(c9f249afad282944babf05dd56534012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81271894a581e1a8f1637e0fa7068f7') in 0.010696 seconds 
+  Import took 0.014415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.071162 seconds.
+  path: Assets/New Terrain 2.asset
+  artifactKey: Guid(c9f249afad282944babf05dd56534012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 2.asset using Guid(c9f249afad282944babf05dd56534012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c2ca2c62ff0cf3e5161e87c1c231a3') in 0.007501 seconds 
+  Import took 0.010760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 253.484654 seconds.
+  path: Assets/desert2.png
+  artifactKey: Guid(41d77179d913ee041868533479066d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/desert2.png using Guid(41d77179d913ee041868533479066d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d4bd8ac547945ebaef36baefbb9d13') in 0.010655 seconds 
+  Import took 0.014179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 640.939134 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack
+  artifactKey: Guid(fe8aef63a75cc574da8f2bfcd7eaea93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack using Guid(fe8aef63a75cc574da8f2bfcd7eaea93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8db72af2a16d061f2903c5f7476d050') in 0.007427 seconds 
+  Import took 0.012474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.005240 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/source
+  artifactKey: Guid(e9928d09fd4ece540acc38bae76dea36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/source using Guid(e9928d09fd4ece540acc38bae76dea36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd9401a1a1a8d9c5483ff2fc4f99170') in 0.007287 seconds 
+  Import took 0.009888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069846 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/source/Desert Rocks Pack.fbx
+  artifactKey: Guid(3327298c8dabe864ca1bf045f2949517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/source/Desert Rocks Pack.fbx using Guid(3327298c8dabe864ca1bf045f2949517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf05e8430ed99e1ce5e75bf37e9045c8') in 0.223986 seconds 
+  Import took 0.228795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.939589 seconds.
+  path: Assets/Scenes/Assets.unity
+  artifactKey: Guid(14ebe9085c155f144afb50d3d5e7e34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets.unity using Guid(14ebe9085c155f144afb50d3d5e7e34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a75ce86ce5edcb2a84fbd8e79998300') in 0.007680 seconds 
+  Import took 0.010445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.145926 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures
+  artifactKey: Guid(d20eb63ecabe1f9488bd44eedbc1df7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures using Guid(d20eb63ecabe1f9488bd44eedbc1df7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe4f042d918e75d9caadc93f772bae7') in 0.007875 seconds 
+  Import took 0.011187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 405.864889 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_1_albedo.png
+  artifactKey: Guid(802891fa08b42ae4c9b9c9595dcc89dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_1_albedo.png using Guid(802891fa08b42ae4c9b9c9595dcc89dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7471d0bb2299fca47866108d479bd89') in 0.014785 seconds 
+  Import took 0.020239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_3_albedo.png
+  artifactKey: Guid(7b12e39bdcee34d49a76ebcd23270dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_3_albedo.png using Guid(7b12e39bdcee34d49a76ebcd23270dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049c39e928cf02b6cfb86c5ca1e48873') in 0.013310 seconds 
+  Import took 0.015883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_2_albedo.png
+  artifactKey: Guid(66fc678ec5f53054aa158218bbe95a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_2_albedo.png using Guid(66fc678ec5f53054aa158218bbe95a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea0fba03e2ed94b96a67c35ea151b0a') in 0.011263 seconds 
+  Import took 0.014495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_1_albedo.png
+  artifactKey: Guid(f7f4f9918499efb49b34c6587e6be98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_1_albedo.png using Guid(f7f4f9918499efb49b34c6587e6be98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '439e4cdcbcd3a7a462e8a9e0f5ef8851') in 0.011359 seconds 
+  Import took 0.013838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_1_AO.png
+  artifactKey: Guid(3d0aadd9a921f8e4c801a08c53a9e431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_1_AO.png using Guid(3d0aadd9a921f8e4c801a08c53a9e431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2a541bbf467c927eee5405ee630d59') in 0.010684 seconds 
+  Import took 0.013747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_3_AO.png
+  artifactKey: Guid(aa3722b8bbbe4ed4f80dc62a339a17ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_3_AO.png using Guid(aa3722b8bbbe4ed4f80dc62a339a17ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f94ef44419795273702720168bfdad1') in 0.011907 seconds 
+  Import took 0.014797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/small_rock_AO.png
+  artifactKey: Guid(968b3d1eb1688f14ab8186683f23bfad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/small_rock_AO.png using Guid(968b3d1eb1688f14ab8186683f23bfad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b7af0d3b6a33358b94d7aba3d820a2') in 0.010524 seconds 
+  Import took 0.013166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_1_normal.png
+  artifactKey: Guid(2030216450f00a44cb17fe19dcd18d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_1_normal.png using Guid(2030216450f00a44cb17fe19dcd18d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1e6681dc28d4cbeab423980624e41a') in 0.014673 seconds 
+  Import took 0.017005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_2_normal.png
+  artifactKey: Guid(1136ce8ac7638b24187a601aa9974d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_2_normal.png using Guid(1136ce8ac7638b24187a601aa9974d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f5eb1e4f29ac9ce909e1e0fd29d5d45') in 0.012382 seconds 
+  Import took 0.015043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/small_rock_normal.png
+  artifactKey: Guid(e5a3b248e0c04924b95b487ab8f2806d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/small_rock_normal.png using Guid(e5a3b248e0c04924b95b487ab8f2806d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b607be8febdeee41409f519cfe645a8d') in 0.011994 seconds 
+  Import took 0.015082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_3_normal.png
+  artifactKey: Guid(1d5c57f44e289604ab35275da403aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_3_normal.png using Guid(1d5c57f44e289604ab35275da403aacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf6a96402e345e7ebd2deb329a66eb58') in 0.011801 seconds 
+  Import took 0.014542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Small_rock_2_normal.png
+  artifactKey: Guid(b5940fa6194f60347b708c853289a085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Small_rock_2_normal.png using Guid(b5940fa6194f60347b708c853289a085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8543541fd3d105fd8bd7ed3e38c3fd96') in 0.011004 seconds 
+  Import took 0.014120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/small_rock_albedo.png
+  artifactKey: Guid(ffe3b06aa714d0e4ea9f9f7a46ca4981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/small_rock_albedo.png using Guid(ffe3b06aa714d0e4ea9f9f7a46ca4981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78edf7d58a2f68465c3e4ad606961639') in 0.010892 seconds 
+  Import took 0.013765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_2_normal.png
+  artifactKey: Guid(fb3ce5028221feb42be7c72547d6cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_2_normal.png using Guid(fb3ce5028221feb42be7c72547d6cbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '723fde5a441f283462fe64a1146a7ec9') in 0.011270 seconds 
+  Import took 0.014271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/internal_ground_ao_texture.jpeg
+  artifactKey: Guid(6c24b5f1ac5a3b64180648f4a020e7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/internal_ground_ao_texture.jpeg using Guid(6c24b5f1ac5a3b64180648f4a020e7e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4646c2f6a54f370ffefbd4d8bdb9fd6') in 0.011139 seconds 
+  Import took 0.014541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Small_rock_2_albedo.png
+  artifactKey: Guid(705254837bd3734498f4c441477df150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Small_rock_2_albedo.png using Guid(705254837bd3734498f4c441477df150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a83704da0d01be127857311247e888') in 0.011405 seconds 
+  Import took 0.013670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_2_AO.png
+  artifactKey: Guid(29d11bb4a9ec6694c98b3cc1188606a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_2_AO.png using Guid(29d11bb4a9ec6694c98b3cc1188606a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f902cbc0e942925584d393148627e5e') in 0.010356 seconds 
+  Import took 0.012998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Small_rock_2_AO.png
+  artifactKey: Guid(a7a71f573153fec45849235248c5d0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Small_rock_2_AO.png using Guid(a7a71f573153fec45849235248c5d0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4a8883538e4bf6984c814a0e5501ed') in 0.009806 seconds 
+  Import took 0.013191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_3_AO.png
+  artifactKey: Guid(cfef192ce640cb844a7d2fd5278f5833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_3_AO.png using Guid(cfef192ce640cb844a7d2fd5278f5833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79b2af241cd06eb7a7777e91b3e23d5') in 0.010188 seconds 
+  Import took 0.013589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_2_AO.png
+  artifactKey: Guid(bdf2f8962fcf45440bb8df23404a42bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_2_AO.png using Guid(bdf2f8962fcf45440bb8df23404a42bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b09408a3626153ee3bce3a77b729b6b4') in 0.009062 seconds 
+  Import took 0.012361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_1_AO.png
+  artifactKey: Guid(0e4de544dcc6a38429fd54813616fb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_1_AO.png using Guid(0e4de544dcc6a38429fd54813616fb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb354f2d89d1f3f22db42ad0a1f49e9a') in 0.009859 seconds 
+  Import took 0.012934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_2_albedo.png
+  artifactKey: Guid(c9b9ba333fcb43e4292d72f36b299e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_2_albedo.png using Guid(c9b9ba333fcb43e4292d72f36b299e90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b628960f1489db79f8e8b8d2c27d8d5') in 0.011738 seconds 
+  Import took 0.014556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_3_normal.png
+  artifactKey: Guid(6f755b5e0e075cc4fb053528b8d6fa11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_3_normal.png using Guid(6f755b5e0e075cc4fb053528b8d6fa11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5490199ebed7ed7fd9c754e076c37a2') in 0.015524 seconds 
+  Import took 0.018940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_1_normal.png
+  artifactKey: Guid(bfcedf3aacb4ee84dbac37f16c3b33b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_1_normal.png using Guid(bfcedf3aacb4ee84dbac37f16c3b33b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbde1dc34b6caf9e6470e989f0d0c4a3') in 0.012213 seconds 
+  Import took 0.015395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_3_albedo.png
+  artifactKey: Guid(fabad99dc31c7c9438af19ce39519df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Midle_rock_3_albedo.png using Guid(fabad99dc31c7c9438af19ce39519df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af86e8d1303d19262ead3e61be088628') in 0.012615 seconds 
+  Import took 0.015277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_1_normal.png
+  artifactKey: Guid(bfcedf3aacb4ee84dbac37f16c3b33b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/textures/Big_rock_1_normal.png using Guid(bfcedf3aacb4ee84dbac37f16c3b33b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbde1dc34b6caf9e6470e989f0d0c4a3') in 0.010988 seconds 
+  Import took 0.014003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.554836 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 1.prefab
+  artifactKey: Guid(e56d84abd18f79f49962b6ec95fad5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 1.prefab using Guid(e56d84abd18f79f49962b6ec95fad5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5c2baf8c400f52225ad6bfd710292d') in 0.013869 seconds 
+  Import took 0.016983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.825581 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 2.prefab
+  artifactKey: Guid(72f2bc142c692864ebe168fe04eb2cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 2.prefab using Guid(72f2bc142c692864ebe168fe04eb2cb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95592dca67ef1cf30f90d1953fb5af90') in 0.010448 seconds 
+  Import took 0.013934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.153840 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 3.prefab
+  artifactKey: Guid(1e07f5e84493a1044b269d50f2b6a1b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 3.prefab using Guid(1e07f5e84493a1044b269d50f2b6a1b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b93dcfffa396e1f5cbeb8c6fd258c8b') in 0.011142 seconds 
+  Import took 0.014361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.252292 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 4.prefab
+  artifactKey: Guid(01df6ec28031f4743965705dd3fc0828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 4.prefab using Guid(01df6ec28031f4743965705dd3fc0828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e50b178307a57f8c2868688ba83c38') in 0.011683 seconds 
+  Import took 0.015109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.329324 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 5.prefab
+  artifactKey: Guid(885e09803f0e5774faa61d25f4a2a5c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 5.prefab using Guid(885e09803f0e5774faa61d25f4a2a5c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972d3be2dfdc2819da55e89e5cdc4538') in 0.012590 seconds 
+  Import took 0.015750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.087143 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 6.prefab
+  artifactKey: Guid(ea248847ca224884abd37f6ef62b3632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 6.prefab using Guid(ea248847ca224884abd37f6ef62b3632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd920288e7cb9e4b4e02e2a5cc796c192') in 0.010727 seconds 
+  Import took 0.013700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.166269 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 7.prefab
+  artifactKey: Guid(dd0a609ae9e0e864fbb39030148b7954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 7.prefab using Guid(dd0a609ae9e0e864fbb39030148b7954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4c28b650fdfa32131846943945ba833') in 0.010812 seconds 
+  Import took 0.013874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.220571 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 8.prefab
+  artifactKey: Guid(51037d10e1b7fde4cafa8229948bc843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 8.prefab using Guid(51037d10e1b7fde4cafa8229948bc843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f6f0e3052ddcedd82b4db9f003b1b3a') in 0.011707 seconds 
+  Import took 0.014465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.216510 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 9.prefab
+  artifactKey: Guid(04e5459cc04792e4f9764046d46f5f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 9.prefab using Guid(04e5459cc04792e4f9764046d46f5f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f10245b73720d09d20a19a7618874a') in 0.010621 seconds 
+  Import took 0.013392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.296175 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 10.prefab
+  artifactKey: Guid(0621066c99a1a704a827a1b46e802b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 10.prefab using Guid(0621066c99a1a704a827a1b46e802b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec55f0f277c7e4ad3942fdb8d655430b') in 0.010069 seconds 
+  Import took 0.013727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.280383 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 11.prefab
+  artifactKey: Guid(ec608be998ca6e54f92d3d82b3f25ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 11.prefab using Guid(ec608be998ca6e54f92d3d82b3f25ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b722a813c2cd91163e8ceda437ec3eda') in 0.010907 seconds 
+  Import took 0.013991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.492281 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 12.prefab
+  artifactKey: Guid(451776151d1180b4e9e5a93a5961fcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 12.prefab using Guid(451776151d1180b4e9e5a93a5961fcce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7ec03863f897c3cd142bb52a7042ac') in 0.013519 seconds 
+  Import took 0.016498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.460133 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 13.prefab
+  artifactKey: Guid(bfc23149796e29d48a90898c82b03086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 13.prefab using Guid(bfc23149796e29d48a90898c82b03086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c624e27fd4d50f2d63e374a7cee785bc') in 0.011669 seconds 
+  Import took 0.014691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.273742 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 14.prefab
+  artifactKey: Guid(ebadd2ea8fbe4fd43bd8551000b99b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 14.prefab using Guid(ebadd2ea8fbe4fd43bd8551000b99b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f12c73a4a15f6d234761d06a525d1662') in 0.011220 seconds 
+  Import took 0.014500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.574118 seconds.
+  path: Assets/3D Models/desert-rocks-stones-pack/Rock 15.prefab
+  artifactKey: Guid(46be2f0f02bad6044819b4c7a9d6bbd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/desert-rocks-stones-pack/Rock 15.prefab using Guid(46be2f0f02bad6044819b4c7a9d6bbd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8435596efaa301f4394d3c98b51333d7') in 0.012370 seconds 
+  Import took 0.015189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.553441 seconds.
+  path: Assets/Scenes/Assets.unity
+  artifactKey: Guid(14ebe9085c155f144afb50d3d5e7e34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets.unity using Guid(14ebe9085c155f144afb50d3d5e7e34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54a2fcd247bcfd2d401b418472b36696') in 0.002243 seconds 
+  Import took 0.004944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.383111 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aaae63ba79ef585b6384de354b2f43a') in 0.005452 seconds 
+  Import took 0.010589 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003045 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.968 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1548 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.1 MB.
+System memory in use after: 93.0 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2102.
+Total: 2.315600 ms (FindLiveObjects: 0.190200 ms CreateObjectMapping: 0.038500 ms MarkObjects: 1.907800 ms  DeleteObjects: 0.177800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003527 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.975 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1548 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.1 MB.
+System memory in use after: 93.0 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2105.
+Total: 1.896900 ms (FindLiveObjects: 0.155700 ms CreateObjectMapping: 0.037500 ms MarkObjects: 1.522600 ms  DeleteObjects: 0.180500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 531.018221 seconds.
+  path: Assets/3D Models/Aloe.prefab
+  artifactKey: Guid(8a13b3dbbf597744192ac4a84ebb93c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Aloe.prefab using Guid(8a13b3dbbf597744192ac4a84ebb93c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf9d58406fb2ddb98b1fc8db2e4bfad') in 0.046675 seconds 
+  Import took 0.051387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.229643 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d8f823230494732f8ab273506af318') in 0.002535 seconds 
+  Import took 0.005245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.917730 seconds.
+  path: Assets/3D Models/Cacti/Cactus_1.mtl
+  artifactKey: Guid(59f11ede5217cb74499ed518401ac343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Cacti/Cactus_1.mtl using Guid(59f11ede5217cb74499ed518401ac343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '476da34906ec3f1ed9c4b2289533212d') in 0.021082 seconds 
+  Import took 0.023796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.828164 seconds.
+  path: Assets/3D Models/Good Cacti
+  artifactKey: Guid(16aca34f6bf781342afa24e7911da54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti using Guid(16aca34f6bf781342afa24e7911da54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7525c34d7cf043b6c6b6824b81e3d36') in 0.006788 seconds 
+  Import took 0.009695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.078899 seconds.
+  path: Assets/3D Models/Bad cacti
+  artifactKey: Guid(5e4effd8fca72e746bff660624fe4400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Bad cacti using Guid(5e4effd8fca72e746bff660624fe4400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42c84b45071c0311e3476755c1dfdfb4') in 0.006012 seconds 
+  Import took 0.008737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.022945 seconds.
+  path: Assets/3D Models/Good Cacti/Cactus_1.prefab
+  artifactKey: Guid(f5e5a450ddc6a324db678d5426ea6aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti/Cactus_1.prefab using Guid(f5e5a450ddc6a324db678d5426ea6aa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c15b509ad74e99a9f50e7007f9c80da') in 0.011979 seconds 
+  Import took 0.014724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.145197 seconds.
+  path: Assets/3D Models/Good Cacti/CactusFlowers_5.prefab
+  artifactKey: Guid(6a188ebfb9e267747ae3a2b14ad8dbd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti/CactusFlowers_5.prefab using Guid(6a188ebfb9e267747ae3a2b14ad8dbd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3831c0d4fcb455e5f51709a9afb3d9e5') in 0.010649 seconds 
+  Import took 0.013580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.185649 seconds.
+  path: Assets/3D Models/Good Cacti/CactusFlowers_4.prefab
+  artifactKey: Guid(c46f5c5f75f740740b40347667ca7afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti/CactusFlowers_4.prefab using Guid(c46f5c5f75f740740b40347667ca7afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72aa1c01957715f11ea204c83b9ba57') in 0.011220 seconds 
+  Import took 0.014262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.167022 seconds.
+  path: Assets/3D Models/Good Cacti/CactusFlowers_3.prefab
+  artifactKey: Guid(1932efe0f4f212c4e8571124c1dbb880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti/CactusFlowers_3.prefab using Guid(1932efe0f4f212c4e8571124c1dbb880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e36b5551ec568c1e17053f10f274948') in 0.010334 seconds 
+  Import took 0.013142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.168813 seconds.
+  path: Assets/3D Models/Good Cacti/CactusFlowers_2.prefab
+  artifactKey: Guid(9a608f9ce6bb3184c8fd201cfecdaa16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti/CactusFlowers_2.prefab using Guid(9a608f9ce6bb3184c8fd201cfecdaa16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cbae25da1e2d0971a7b14a6f2767ab9') in 0.010760 seconds 
+  Import took 0.013597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.113909 seconds.
+  path: Assets/3D Models/Good Cacti/CactusFlower_1.prefab
+  artifactKey: Guid(84762f550d81d9d43bb1fbf8faf9cc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti/CactusFlower_1.prefab using Guid(84762f550d81d9d43bb1fbf8faf9cc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f6fe53fb6db39edc1f526a75e79b7e') in 0.015375 seconds 
+  Import took 0.018360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003076 seconds.
+  path: Assets/3D Models/Good Cacti/CactusFlower_1.prefab
+  artifactKey: Guid(84762f550d81d9d43bb1fbf8faf9cc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti/CactusFlower_1.prefab using Guid(84762f550d81d9d43bb1fbf8faf9cc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f6fe53fb6db39edc1f526a75e79b7e') in 0.007604 seconds 
+  Import took 0.010316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.208020 seconds.
+  path: Assets/3D Models/Good Cacti/Cactus_2.prefab
+  artifactKey: Guid(1642a8bb3a03e774a9898238b1153ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti/Cactus_2.prefab using Guid(1642a8bb3a03e774a9898238b1153ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e098b64f2d0287010577dcd75e4b3ff5') in 0.012780 seconds 
+  Import took 0.015895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.447110 seconds.
+  path: Assets/3D Models/Good Cacti/Cactus_3.prefab
+  artifactKey: Guid(2add3425b1e6c484897a8ed5fc43edbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti/Cactus_3.prefab using Guid(2add3425b1e6c484897a8ed5fc43edbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '337e042cdb70d6b4c972f79feb14df73') in 0.010805 seconds 
+  Import took 0.013521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.393666 seconds.
+  path: Assets/3D Models/Good Cacti/Cactus_4.prefab
+  artifactKey: Guid(285149a2de4a73d4dbaf86339fd62690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti/Cactus_4.prefab using Guid(285149a2de4a73d4dbaf86339fd62690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3923a01949e7668dbeac7e4107b5471f') in 0.010862 seconds 
+  Import took 0.013681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.061454 seconds.
+  path: Assets/3D Models/Good Cacti/Cactus_5.prefab
+  artifactKey: Guid(505c0e3126ed61c4a9bc9d2963c7adee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Models/Good Cacti/Cactus_5.prefab using Guid(505c0e3126ed61c4a9bc9d2963c7adee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68825e1a1934f92ce84d76a420205b6d') in 0.010230 seconds 
+  Import took 0.012982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.903572 seconds.
+  path: Assets/Scenes/Assets.unity
+  artifactKey: Guid(14ebe9085c155f144afb50d3d5e7e34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets.unity using Guid(14ebe9085c155f144afb50d3d5e7e34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a60b6421845a1f510bc4a1e3907fd7') in 0.002726 seconds 
+  Import took 0.007064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/Scenes/Assets.unity
+  artifactKey: Guid(14ebe9085c155f144afb50d3d5e7e34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets.unity using Guid(14ebe9085c155f144afb50d3d5e7e34a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a60b6421845a1f510bc4a1e3907fd7') in 0.002089 seconds 
+  Import took 0.004394 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

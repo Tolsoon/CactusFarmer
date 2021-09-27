@@ -13,6 +13,10 @@ public class Cactus : MonoBehaviour
 
     /*
         0 - Purple Flower Cactus
+        1 - Red Flower Cactus
+        2 - Blue Flower Cactus
+        3 - Orange Flower Cactus
+
      
      */
 

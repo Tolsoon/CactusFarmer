@@ -29,6 +29,15 @@ public class Item : MonoBehaviour
     0 - Empty Item
     1 - Purple Flower Cactus Seed
     2 - Purple Cactus Flower
+    3 - Red Flower Cactus Seed
+    4 - Red Cactus Flower
+    5 - Blue Flower Cactus Seed
+    6 - Blue Cactus Flower
+    7 - Orange Flower Cactus Seed
+    8 - Orange Cactus Flower
+    
+    
+    
       
     */
 
