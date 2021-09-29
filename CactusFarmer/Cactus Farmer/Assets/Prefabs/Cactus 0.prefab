@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantType: 0
+  growthStage: 0
+  harvestStage: 0
+  flower: {fileID: 0}
 --- !u!1 &7466482023847281167
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +107,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2505642851634945670, guid: 591517f83523e0049bafde3f16ba90e0, type: 3}
+  - {fileID: 2100000, guid: 019497bf30dbf9542b4d37ea0c597f10, type: 2}
   - {fileID: -5674820151333345596, guid: 591517f83523e0049bafde3f16ba90e0, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
