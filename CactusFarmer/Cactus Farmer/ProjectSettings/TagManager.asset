@@ -11,6 +11,7 @@ TagManager:
   - item
   - sellZone
   - buyZone
+  - invisiblewall
   layers:
   - Default
   - TransparentFX
