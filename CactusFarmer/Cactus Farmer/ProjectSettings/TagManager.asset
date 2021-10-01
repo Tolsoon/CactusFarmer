@@ -12,6 +12,7 @@ TagManager:
   - sellZone
   - buyZone
   - invisiblewall
+  - codex
   layers:
   - Default
   - TransparentFX
