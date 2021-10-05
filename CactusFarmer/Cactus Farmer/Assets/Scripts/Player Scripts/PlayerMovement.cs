@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Saver save;
+    public GameObject book;
 
     [SerializeField] public float speed;
     public CharacterController controller;
@@ -40,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (lockCursor)
         {
-            //Cursor.lockState = CursorLockMode.Locked;
+            Cursor.lockState = CursorLockMode.Locked;
             //Cursor.visible = false;
         }
     }
@@ -64,6 +65,19 @@ public class PlayerMovement : MonoBehaviour
 
         UpdateMouseLook();
         UpdateMovement();
+
+
+        //open or close book
+        if (Input.GetKeyDown(KeyCode.J) && book.activeInHierarchy)
+        {
+            Cursor.lockState = CursorLockMode.Locked;            
+            book.SetActive(false);
+        }
+        else if (Input.GetKeyDown(KeyCode.J) && !book.activeInHierarchy)
+        {
+            Cursor.lockState = CursorLockMode.None;            
+            book.SetActive(true);
+        }
 
     }
 
